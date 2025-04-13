@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox xmlns="http://javafx.com/javafx/22"
+      xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.example.somma_due_numeri.SommaDiDueNumeriController"
+      prefHeight="400.0" prefWidth="600.0">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Label fx:id="lblAddendo1" alignment="CENTER" text="Addendo 1">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddendo1" alignment="CENTER" promptText="inserisci numero">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Label fx:id="lblAddendo2" text="Addendo 2">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddendo2" alignment="CENTER" promptText="inserisci numero">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button fx:id="btnCalcola" mnemonicParsing="false" onAction="#clickOnCalcola" text="Calcola">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancella" mnemonicParsing="false" onAction="#clickOnCancella" text="Cancella">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Label fx:id="lblTotale" alignment="CENTER" text="Totale">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSomma">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
